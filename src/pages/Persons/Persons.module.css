@@ -1,0 +1,91 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+}
+
+.container::-webkit-scrollbar {
+  width: 0.5em;
+  border-radius: 0.1em;
+}
+
+.container::-webkit-scrollbar-thumb {
+  scroll-behavior: smooth;
+  background-color: #66bb6a;
+  border-radius: 0.1em;
+}
+
+.search {
+  background-color: aliceblue;
+  border-style: none;
+  height: 3em;
+  border-radius: 0.5em;
+  transition: 0.2s;
+  display: flex;
+  font-weight: bold;
+  position: relative;
+  top: -4em;
+}
+
+.search:focus {
+  outline: auto #66bb6a;
+  transition: 0.2s;
+  border-style: none;
+  animation: barClick 0.5s both;
+}
+
+.search:not(.search:focus) {
+  animation: barExit 0.5s both;
+}
+
+.loading{
+  animation: rotation 2s infinite linear;
+  width: 100px;
+}
+
+.notFound{
+  color: #66bb6a;
+  border-radius: 1em;
+  padding: 1em;
+  background-color: rgba(255, 255, 255, 0.938);
+  height: 5%;
+}
+
+@keyframes barClick {
+  from {
+    width: 10%;
+  }
+
+  to {
+    width: 30%;
+  }
+}
+
+@keyframes barExit {
+  from {
+    width: 30%;
+  }
+
+  to {
+    width: 10%;
+  }
+
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1060px) {
+  .search {
+    top: 0;
+  }
+}

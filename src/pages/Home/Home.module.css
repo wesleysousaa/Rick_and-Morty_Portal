@@ -1,0 +1,89 @@
+.container {
+  margin: 2em;
+  display: flex;
+  flex-direction: row;
+  color: #eceff4;
+  width: 80%;
+  height: 80%;
+  background-color: #0e1018e9;
+  border-radius: 0.2em 0.7em 0.7em 0.2em;
+  align-self: center;
+  justify-self: center;
+  box-shadow: 15px 17px 10px 9px rgba(0, 0, 0, 0.1);
+  animation-name: aparicao;
+  animation-duration: 1s;
+}
+
+iframe {
+  border-radius: 0.2em;
+  width: 60%;
+  height: 100%;
+}
+
+.description {
+  border: 0;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.spanRick {
+  text-decoration: underline;
+  color: #66bb6a;
+  margin-right: 0.3em;
+}
+
+.spanMorty {
+  text-decoration: overline;
+  color: #ab47bc;
+  margin-left: 0.3em;
+
+}
+
+h2 {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 span {
+  font-size: large;
+  color: #c4c7ce;
+  margin-bottom: 0.3em;
+}
+
+.description h2 {
+  width: 78%;
+}
+
+@keyframes aparicao {
+  from {
+    background-color: #0e101800;
+    position: relative;
+    top: 5em;
+  }
+
+  to {
+    background-color: #0e1018e9;
+    position: relative;
+    top: 0em;
+  }
+}
+
+@media (max-width: 1470px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .description {
+    width: 100%;
+  }
+
+  iframe {
+    width: 100%;
+    height: 50vh;
+  }
+}

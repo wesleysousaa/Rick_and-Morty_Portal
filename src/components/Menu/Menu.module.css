@@ -1,0 +1,50 @@
+nav ul {
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  list-style: none;
+  margin-right: 1em;
+  transition: 1s;
+}
+
+nav ul li {
+  margin: 0.7em;
+  transform: scale(1, 1);
+  transition: 0.2s;
+  padding: 1em;
+  border-radius: 0.2em;
+  font-weight: 700;
+}
+
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+li:hover {
+  background-color: rgba(255, 255, 255, 0.187);
+  transform: scale(1.1, 1.1);
+  transition: 0.2s;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.imageMenu {
+  margin-left: 1em;
+  width: 3em;
+}
+
+.imagesMenu {
+  display: flex;
+  align-items: center;
+}
+
+.imageMenuName {
+  width: 7em;
+}

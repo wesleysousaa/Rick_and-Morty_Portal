@@ -1,0 +1,19 @@
+.active {
+  transition: 0.2s;
+  width: 5em;
+  height: 2px;
+  border-bottom: 2px #FFF solid;
+}
+
+.App {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 1470px) {
+  .App {
+    height: auto;
+  }
+}

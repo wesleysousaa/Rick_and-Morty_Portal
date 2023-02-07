@@ -1,0 +1,159 @@
+.card,
+.cardSelected {
+  display: flex;
+  width: 37em;
+  height: 20em;
+  margin: 1em;
+  background-color: #0e1018e9;
+  box-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.5s;
+  transform: scale(1, 1);
+  color: #FFF;
+  border: #5e35b1 0.1em solid;
+  border-radius: 2em;
+  animation-name: aparicao;
+  animation-duration: 1s;
+}
+
+.cardSelected {
+  width: 90%;
+  height: 80%;
+  font-size: x-large;
+}
+
+.cardSelected .description {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cardSelected .descriptionLeft {
+  display: flex;
+  height: 70%;
+}
+
+.cardSelected .descriptionLeft .description {
+  width: 50%;
+}
+
+.cardSelected .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardSelected .img img {
+  height: 70%;
+  border-radius: 1em;
+  margin-left: 1em;
+}
+
+.img img {
+  height: 100%;
+  border-radius: 2em 0 0 2em;
+}
+
+.card:hover {
+
+  transition: 0.5s;
+  transform: scale(1.03, 1.03);
+}
+
+.description {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.description h3,
+p {
+  margin: 0;
+}
+
+.iconGenero {
+  width: 1em;
+  height: 1em;
+  background-color: #66bb6a;
+  border-radius: 0.3em;
+  padding: 0.2em;
+  margin-left: 0.5em;
+}
+
+.nameGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.episodes {
+  width: 50%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.episodes::-webkit-scrollbar {
+  width: 0.3em;
+}
+
+.episodes::-webkit-scrollbar-thumb {
+  border-radius: 0.1em;
+  background-color: #ab47bc;
+}
+
+.descriptionGroup {
+  width: 100%;
+
+}
+
+.description h2 {
+  max-width: 9em;
+}
+
+.GroupsData {
+  width: 80%;
+}
+
+.GroupsData p {
+  margin-top: 0.5em;
+}
+
+h6 {
+  margin: 0;
+}
+
+
+@keyframes aparicao {
+  from {
+    background-color: #0e101800;
+    position: relative;
+    top: 3em;
+  }
+
+  to {
+    background-color: #0e1018e9;
+    position: relative;
+    top: 0em;
+  }
+}
+
+@media (max-width: 1060px) {
+  .cardSelected {
+    flex-direction: column;
+  }
+
+  .episodes{
+    height: 7em;
+  }
+
+  .description{
+    height: 8em;
+  }
+
+  .cardSelected .descriptionLeft{
+    overflow-y: auto;
+  }
+}
