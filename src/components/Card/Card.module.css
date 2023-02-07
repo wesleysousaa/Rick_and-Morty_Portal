@@ -110,7 +110,7 @@ p {
 }
 
 .description h2 {
-  max-width: 9em;
+  width: 9em;
 }
 
 .GroupsData {
@@ -155,5 +155,11 @@ h6 {
 
   .cardSelected .descriptionLeft{
     overflow-y: auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  .card{
+    width: 100%;
   }
 }

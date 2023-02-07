@@ -56,7 +56,7 @@
 
 @keyframes barClick {
   from {
-    width: 10%;
+    width: 20%;
   }
 
   to {
@@ -70,7 +70,7 @@
   }
 
   to {
-    width: 10%;
+    width: 20%;
   }
 
 }
