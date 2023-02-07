@@ -58,7 +58,9 @@ const Persons = () => {
       <div className={styles.container} id='container' onScroll={(e) => handleScroll(e.target)}>
         {data && data.results ? (data.results.map((c, k) => (
           <Card character={c} key={k} />
-        ))) : (<h1 className={styles.notFound}>Nenhum resultado encontrado</h1>)}
+        ))) : (
+        <h1 className={styles.notFound}>Nenhum resultado encontrado</h1>)
+        }
       </div>
     </>
   )
