@@ -8,9 +8,8 @@ const Home = () => {
       <iframe
         src="https://www.youtube.com/embed/6Zt15L7Gy3U"
         title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen />
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+         />
       <div className={styles.description}>
         <h1>
 

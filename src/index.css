@@ -1,12 +1,9 @@
-body, html {
+body,
+html {
   display: flex;
   margin: 0;
   font-family: 'Ubuntu', sans-serif;
   background-image: url('./assets/wallpaper.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-@media (max-width: 1471px) {
-  
 }
