@@ -56,6 +56,7 @@ const Persons = () => {
       {loading && <img className={styles.loading} src={loadingIcon} alt='Loading' />}
 
       <div className={styles.container} id='container' onScroll={(e) => handleScroll(e.target)}>
+        
         {data && data.results ? (data.results.map((c, k) => (
           <Card character={c} key={k} />
         ))) : (
